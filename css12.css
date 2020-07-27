@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0px;
+    background: #4e4e4e;
+    width: 100%;
+    min-height: 38px;
+    margin: 0 auto; 
+    /*for width 960px*/
+    
+    border-bottom: 5px solid orange;
+    
+    
+
+}
+
+
+
+
+
+.menu li {
+    float: left;
+    border-right: 1px solid #605B5B;
+    border-left:1px solid #2b2a2a;
+    position: relative;
+    
+    
+    
+
+
+
+
+
+    /*list-style-type: none;*/
+}
+
+.menu li a {
+    
+    text-decoration: none;
+    /*display: block;*/
+    background-color: #4e4e4e;
+
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    /*for li border visible*/
+    
+    transition: 0.3s all ease;
+
+}
+
+.menu li:first-child {
+    border-left: none;
+}
+
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu li a:hover {
+    background: orange;
+}
+
+.menu li ul {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+   /* visibility: hidden;
+    left: use kora jai;------------------------------------*/
+    display: none;
+
+
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu li ul li {
+    border: none;
+    /*border right left none korse*/
+    
+    float: none;
+   border-top: 1px solid #605B5B;
+    border-bottom:1px solid #2b2a2a;
+    width: 200px;
+    position: relative;
+}
+
+.sub-content{
+   
+    /*list-style-type: none;
+    padding: opx;--------ora use kore nai*/
+    position: absolute;
+    top: -9999px;
+   
+    
+    
+    
+    
+}
+
+/*.sub-content li{
+    
+    
+    top: -39px;
+    
+}
+*/
+.menu li ul li:hover .sub-content{
+    top: -1px;
+        /*ora top zero/0 dise*/
+        
+    left: 200px;
+    
+}
+
+
+
+
+
+
